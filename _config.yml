@@ -9,3 +9,5 @@ navigation:
     url: datastory
   - title: Example
     url: example
+  - title: Example2
+    url: example2
