@@ -22,3 +22,7 @@ Political information was gathered from several different sources. Age-specific 
 ## Some plot for fun because that was lot of work
 
 {% include blabla.html %}
+
+## Some other plot for fun because that was lot of work
+
+{% include count.html %}
