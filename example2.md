@@ -12,7 +12,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 # Header 1
 
-{% include https://raw.githubusercontent.com/MikaelKalajdzic/adavengers-datastory/refs/heads/master/assets/plots/interpolated-vote-distribution.html %}
+<iframe src="/assets/plots/interpolated-vote-distribution.html" width="100%" height="600"></iframe>
 
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
