@@ -4,4 +4,4 @@
 Bla bla bla bbalblaalblablbalablablbalbaalbalbablalbblalbalbalblablablalba
 
 
-[blablabla](https://github.com/MikaelKalajdzic/adavengers-datastory/blob/master/assets/plots/interpolated-vote-distribution.html)
+[blablabla](https://raw.githubusercontent.com/MikaelKalajdzic/adavengers-datastory/refs/heads/master/assets/plots/interpolated-vote-distribution.html)
