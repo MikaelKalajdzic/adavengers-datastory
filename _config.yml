@@ -1,9 +1,11 @@
 theme: jekyll-theme-minimal
-title: ADA Template Website
+title: ADAvengers Datastory
 description: A template website for ADA
 show_downloads: True
 navigation:
   - title: Home
     url: /
+  - title: Datastory
+    url: datastory
   - title: Example
     url: example
