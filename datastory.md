@@ -24,6 +24,8 @@ We examine the top 8 beer styles, such as IPA, Stout, and Lager, to identify the
 
 What are the most reviewed beers styles:
 
+{% include count_total_reviews.html %}
+
 First of all, let's see what are the most preferred beer styles across U.S. states for each year:
 
 The sentiment plot too...
