@@ -44,7 +44,7 @@ plot with winners over years
 what are the confounding factors that we considered and why we went for the ones that we did... 
 deeper analysis into potential confounding factors - age, where we get the data from. Why do we interpolate (motivation behind all this)
 
-{% usmap_politics.html %}
+{% include usmap_politics.html %}
 
 {% include interpolated-vote-distribution.html %}
 
