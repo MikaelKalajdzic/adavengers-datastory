@@ -24,7 +24,9 @@ We examine the top 8 beer styles, such as IPA, Stout, and Lager, to identify the
 
 What are the most reviewed beers styles:
 
-![total_styles](assets/img/beer_types_word_cloud.png)
+<div align="center">
+  <img src="/assets/img/beer_types_word_cloud.png">
+</div>
 
 {% include count_total_reviews.html %}
 
