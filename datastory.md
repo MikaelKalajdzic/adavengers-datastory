@@ -34,7 +34,8 @@ comment on results,...
 
 ## Connection to politics
 
-plot with winners over years
+plot with winners over years  
+what are the confounding factors that we considered and why we went for the ones that we did... 
 deeper analysis into potential confounding factors - age, where we get the data from. Why do we interpolate (motivation behind all this)
 
 ## Some plot for fun because that was lot of work
