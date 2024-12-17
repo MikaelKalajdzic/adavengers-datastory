@@ -28,7 +28,13 @@ What are the most reviewed beers styles:
 
 First of all, let's see what are the most preferred beer styles across U.S. states for each year:
 
+{% include fav_beer_us.html %}
+
+{% include count.html %}
+
 The sentiment plot too...
+
+{% include sentiment_states.html %}
 
 comment on results,...
 
@@ -38,13 +44,17 @@ plot with winners over years
 what are the confounding factors that we considered and why we went for the ones that we did... 
 deeper analysis into potential confounding factors - age, where we get the data from. Why do we interpolate (motivation behind all this)
 
-## Some plot for fun because that was lot of work
+{% usmap_politics.html %}
 
 {% include interpolated-vote-distribution.html %}
 
+deeper analysis into potential confounding factors - age, where we get the data from. Why do we interpolate (motivation behind all this)
+
+{% include clustering_states.html %}
+
 ## Some other plot for fun because that was lot of work
 
-{% include count.html %}
+
 
 ## Sources
 
