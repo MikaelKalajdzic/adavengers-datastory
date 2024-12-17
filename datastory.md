@@ -26,6 +26,7 @@ What are the most reviewed beers styles:
 
 <div style="text-align: center;">
   <img src="./assets/img/beer_types_word_cloud.png" alt="Beer Types Word Cloud" style="max-width: 100%; height: auto;">
+  <p style="font-size: 14px; color: gray;">Figure 1: A word cloud showing beer styles encompassed by our general categories.</p>
 </div>
 
 {% include count_total_reviews.html %}
