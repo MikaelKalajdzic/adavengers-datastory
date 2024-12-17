@@ -6,17 +6,13 @@ layout: full
 
 # Pints & Politics: Sipping Through Red, Blue, and Brew 🇺🇸🍺
 
-## Introduction
+In the light of recent elections and the ever-present passion for beer in American culture, we embark on a unique journey to uncover the fascinating link between politics and pints. This data story delves into the heart of the American lifestyle, exploring whether the beers we sip reveal more than just our taste preferences—perhaps even our political leanings 🤔.  
 
-In the light of recent elections and the ever-present passion for beer in American culture, we embark on a unique journey to uncover the fascinating link between politics and pints. This data story delves into the heart of the American lifestyle, exploring whether the beers we sip reveal more than just our taste preferences—perhaps even our political leanings 🤔.
+By analyzing beer styles, sentiments, and review ratings across the U.S., we aim to map out the subtle (and not-so-subtle) ways our brews align with political identities. We investigate how beer preferences vary by state, do they depend on the political leaning, whether swing states gravitate toward specific styles during election years and how the beer preference trends change throughout the years of 2004-2016.
+This deep dive into Pints & Politics sets out to discover whether these two inherently American passions are linked or if, in the end, beer simply transcends party lines. Grab a pint and join us on this flavorful and thought-provoking journey!
 
-
-By analysing beer styles, sentiments, and review ratings across the U.S., we aim to map out the subtle (and not-so-subtle) ways our brews align with political identities. We investigate how beer preferences vary by state, do they depend on the political leaning, whether swing states gravitate toward specific styles during election years and how the beer preference trends change throughout the years of 2004-2016.
-From the amber waves of lagers to the hop-forward ales, this deep dive into Pints & Politics sets out to discover whether these two quintessentially American passions are linked—or if, in the end, beer simply transcends party lines. Grab a pint and join us on this flavourful and thought-provoking journey!
-
-
-The information about beer reviews we gather from a BeerAdvocate website… jusfitication why we only used that one and year range is 2001-2017
-Political information was gathered from several different sources. Age-specific voting preference was gathered from … polls. The information was available for the election years, however not for all the states. Explanation for that… 
+The information about beer reviews we gather from a ![https://www.beeradvocate.com/](BeerAdvocate) website. It contains over 2 million reviews coming from U.S. users. We find that this information is sufficient to conduct our analysis, leading to us focusing solely on the BeerAdvocate dataset. The reviews in the dataset are spanning over years from 2001 to 2017.
+Political information was gathered from several different sources. For our analysis we required information about the winning parties in each U.S. state, in the election years 2004-2016, obtained from ![https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/42MVDX](U.S. President 1976-2020). Age-specific voting preference was gathered from exit polls. The information was available for the mentioned election years ([Sources](#sources)), however not for all the states. This is due to the fact that exit polls are of interest in states that change their political climate over the years, *swing states*. Since conducting these surveys is costly, the consistently Democrat or Republican states are usually omitted.
 
 
 ## Some plot for fun because that was lot of work
@@ -26,3 +22,6 @@ Political information was gathered from several different sources. Age-specific 
 ## Some other plot for fun because that was lot of work
 
 {% include count.html %}
+
+## Sources
+
