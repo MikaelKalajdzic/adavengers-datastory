@@ -59,7 +59,11 @@ deeper analysis into potential confounding factors - age, where we get the data 
 
 ## Some other plot for fun because that was lot of work
 
-
+| Column 1       | Column 2       | Column 3       |
+|-----------------|---------------|----------------|
+| Row 1, Item 1  | Row 1, Item 2  | Row 1, Item 3  |
+| Row 2, Item 1  | Row 2, Item 2  | Row 2, Item 3  |
+| Row 3, Item 1  | Row 3, Item 2  | Row 3, Item 3  |
 
 ## Sources
 
