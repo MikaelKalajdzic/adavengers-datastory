@@ -69,5 +69,7 @@ deeper analysis into potential confounding factors - age, where we get the data 
 | Row 2, Item 1  | Row 2, Item 2  | Row 2, Item 3  |
 | Row 3, Item 1  | Row 3, Item 2  | Row 3, Item 3  |
 
+{% include top3_styles.html %}
+
 ## Sources
 
