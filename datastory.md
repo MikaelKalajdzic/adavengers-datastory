@@ -59,6 +59,8 @@ deeper analysis into potential confounding factors - age, where we get the data 
 
 ## Some other plot for fun because that was lot of work
 
+{% include pairwise.html %}
+
 | Column 1       | Column 2       | Column 3       |
 |-----------------|---------------|----------------|
 | Row 1, Item 1  | Row 1, Item 2  | Row 1, Item 3  |
