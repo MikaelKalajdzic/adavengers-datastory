@@ -216,11 +216,65 @@ layout: full
 
 {% include interpolated-vote-distribution.html %}
 
-deeper analysis into potential confounding factors - age, where we get the data from. Why do we interpolate (motivation behind all this)
+**Jim:** Let me have a look… Oh so it’s interesting for example in New York, young voters aged from 18 to 29 consistently favor Democrats over Republicans.
+
+**Larry:** A trend that can also be seen in other states. However, the percentage of young Democrat voters in New York (a Democratic state) is consistently higher than in Texas (a Republican state).
+
+**Jim:** And what about older voters?
+
+**Larry:** For the oldest age group, for example in Arizona (a Republican state), the ratio of Democrat to Republican voters remains relatively stable over the years, whereas the other two age groups show more dynamic changes. This variability highlights how different age groups within the same state might respond differently to political or social shifts over time.
+
+**Jim:** Okay, I’m following you so far, but with this much data, how do you even start making sense of it all?
+
+**Larry:** That’s where clustering comes in! With 13 years of spanning data over 17 states, it’s challenging to draw conclusions about political trends, changes over time, and similarities between states. To address this, we can opt for an unsupervised approach to group states and identify patterns in the data. Specifically, I applied K-Means clustering to this time-series data – a percentage of democrat votes for each age group, in the span of 13 years. I set the number of clusters to 3, based on the assumption that they represent consistently Democratic states, consistently Republican states, and swing states. Look what I obtained.
 
 {% include clustering_states.html %}
 
-## Some other plot for fun because that was lot of work
+**Jim:** Wow so you got the three distinct clusters. So yeah, California and New York are in the Democratic cluster?
+
+**Larry:** Exactly! On the far right, funnily enough, we see New York and California – two consistently Democratic states known for their progressive policies and strong liberal voting history. Then on the left clustered together are Texas, Arizona, Georgia, Kentucky, and South Carolina, which are Republican states, known for their strong conservative values. Interestingly, Indiana, a swing state, also joins this Republican cluster.
+
+**Jim:** And in the middle cluster must be the swing states?
+
+**Larry:** Exactly! With an exception for New Hampshire, which is a Democratic state. But still, we can consider that these clusters represent Democrat, Republican and swing state groups of states that have similar voting trends.
+
+**Jim:** Alright, Larry, you’ve built the suspense. Are you finally going to spill the beans, or should I order another pint first?
+
+**Larry:** (*laughs*) Hold onto your pint man. So so so! In order to determine whether politics influence beer preference, I focused on three beer styles: IPAs and Stouts, as these are the most popular and frequently reviewed styles, and also on Lagers, as they are typically the least popular with the lowest average ratings. For the analysis, I tracked changes in average ratings over the years and shifts in positive sentiment. Then, to measure how similar the trends are between states, I calculated Pearson and Spearman correlations. So that I can give you numbers, that’s what you wanted from the beginning, don’t you?
+
+**Jim:** You know me!
+
+**Larry:** On top of that, I did a “lookalike” analysis, comparing states with similar political voting trends and geographic proximity to see how these factors might influence beer preferences.
+
+*Jim nods, sipping his beer, ready for Larry to dive into the details of his results.*
+
+**Larry:** First, let’s take New York and California. Both are Democratic states but located on the opposite sides of the country. In terms of average ratings, we can see very similar and highly correlated IPA (0.82) and Stout (0.89) trends. For Lager, ratings follow a similar pattern in both states until 2016, when the rating in California reaches a higher value than in New York. When it comes to trends in fraction of positive sentiment, I noticed a moderate positive correlation between two states for IPAs (0.65) and Stouts (0.55).
+
+**Jim:** Could this similarity in beer taste trends, considering the geographical distance of these states indicate the influence of their left-leaning political preference?
+
+**Larry:** Let’s see some other examples! Take Arizona and Texas, two representative Republican states, close geographically. We can observe that for IPA and Stouts, the trends of average ratings have a correlation of 0.77 and 0.75 respectively, and the trends are rather similar, both having an increase after 2008. For Lager, the correlation is slightly lower, but both curves reach similar values by 2016. Sentiment, however, doesn’t show any significant correlation.
+
+**Jim:** So… sentiment isn’t really tied to politics or geography?
+
+**Larry:** Exactly. Based on these results, I decided to exclude sentiment from the analysis moving forward, it doesn’t add much value. Now take New York (Democrat) and Georgia (Republican), having similar trends across all beer styles, with correlation being around 0.7. Them being on the opposite political sides, it poses a question of whether its closeness influences the similarity in beer preference trends. For example, the correlation of IPA and Stout trends have a lower correlation value (around 0.55) for Georgia and California (Democrat) than Georgia and New York.
+
+*Jim is carefully listening to his friend Larry*
+
+**Larry:** New York and Arizona have a Pearson correlation value of around 0.7 for IPAs and Stouts, while for Lagers it is a higher value of 0.84. Therefore, we can say that neither politics nor geographical location have an influence on their beer trends. It is also interesting to see that for Arizona and South Carolina, which are both Republican states, not close geographically, the value of Pearson correlation for average ratings for IPA is -0.04 (the curves seem to be rather constant), the Spearman correlation being of value -0.23 suggesting the trends not being influenced by their same political affiliation. The results are also similar for average ratings for Stouts for these two states, both correlations being around 0.2.
+
+**Larry:** And then there are swing states. And the results are interesting. For example, Nevada and Florida are two states on opposite coasts. When observing their IPA curves, we can see they followed a similar trend until 2013, and they completely diverged in 2016, when Florida voted Republican and Nevada Democrat. Also, for Stouts, we see that the curves overlap in 2008, when Democrats took over, while, on the other hand, there is a larger difference in 2016 when they do not share the winning party. For Pennsylvania and Virginia, for IPAs, the curves are also closer in election years when the states vote for the same party, while diverging for 2016, however in the opposite fashion than for Nevada and Florida, with Democrats giving higher average scores (over 4) than Republicans (around 3.5). For the other beer styles, I couldn’t observe some specific patterns in trend change.
+
+**Jim:** This is freaking amazing!
+
+**Larry:** These results lead me to delve deeper into trend analysis of swing state beer preferences.
+
+**Bartender: Last round guys! The bar closes in 10 minutes!**
+
+*Jim looks at his pint and realizes he hasn’t even made it halfway through. The excitement of Larry’s analysis had completely absorbed him. He takes a sip and leans in closer, eager for the next part of the story.*
+
+**Larry:**  Finally, I wanted to assess how beer preferences change for states that have changed their political leaning over the years, as I said, swing states. In order to do so, I decided to look at the trend of the top 3 favourite beer styles by average rating and compare it between swing states with the same *swing pattern*. I consider two states to have the same *swing pattern* if the same party won in the same years across both states. I identified a few pairs of such states, you can see their location and *swing* voting pattern here:
+
+{% include swing_pattern.html %}
 
 {% include correlation_matrix.html %}
 
@@ -231,8 +285,6 @@ deeper analysis into potential confounding factors - age, where we get the data 
 | Row 1, Item 1  | Row 1, Item 2  | Row 1, Item 3  |
 | Row 2, Item 1  | Row 2, Item 2  | Row 2, Item 3  |
 | Row 3, Item 1  | Row 3, Item 2  | Row 3, Item 3  |
-
-{% include swing_pattern.html %}
 
 {% include top3_styles.html %}
 
