@@ -65,13 +65,17 @@ layout: full
 **Jim:** So these are the beer styles you focused on in your research?
 
 **Larry:** Yes! Actually, among the reviewed beers in the dataset, there are 104 unique beer styles. I did matching by keywords into the 8 predefined categories. I was left with 56 unique styles. And to give you a clearer idea of their distribution, here’s a cloud of words.
-
+<br/><br/>
 <div style="text-align: center;">
   <img src="./assets/img/beer_types_word_cloud.png" alt="Beer Types Word Cloud" style="max-width: 100%; height: auto;">
   <p style="font-size: 14px; color: gray;">Figure 1: A word cloud showing beer styles encompassed by our general categories.</p>
 </div>
 
-{% include count_total_reviews.html %}
+**Jim:** Looks very nice. So you’ve categorized all these beer styles, but how do you know which ones are actually the most popular?
+
+**Larry:** I see you’re starting to get interested now! I analyzed the number of reviews left by U.S. users for each beer style over the years. Check this out!
+
+*Larry shows the interactive chart on his phone*{% include count_total_reviews.html %}
 
 First of all, let's see what are the most preferred beer styles across U.S. states for each year:
 
