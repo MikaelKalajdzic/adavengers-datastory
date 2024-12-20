@@ -160,7 +160,59 @@ layout: full
 
 {% include sentiment_states.html %}
 
+**Jim:** Yeah, I see that it reflects what we discussed before about the trend of Lagers not being favored. Their fraction of positive reviews is substantially lower compared to other beer styles.
+
+**Larry:** Well observed!
+
+**Jim:** But can you conclude anything from that? I mean… for the… politic–
+
+*Larry interrupts him*
+
+**Larry:** Tricky.
+
+*Jim, leans back on his chair, and takes a sip of beer*
+
+**Larry:** I know you’re waiting for that…
+
+**Jim:** You know I am.
+
+**Larry:** So first of all, since the beer reviews span the years 2001 to 2017, I focused on a subset of this period, specifically during the four election years 2004, 2008, 2012, and 2016.
+
+**Jim:** What was the first step?
+
+**Larry:** The first step was to determine which political party won each state in these elections. Look at this.
+
 {% include usmap_politics.html %}
+
+**Larry:** As you can see, some states have remained consistent in their political leanings over the years, with the same party winning across all four elections. For example, California, New York, and Massachusetts are consistently Democrats, while Texas, Arizona, and Montana have consistently leaned Republican. Also, there are states that shift their political affiliations between elections – the so-called swing states. Those are particularly interesting to analyze, as they often play a decisive role in determining the outcome of the elections. Such swing states are Pennsylvania, Nevada, Virginia, and Indiana.
+
+**Jim:** But for bringing this to the beer analysis you did so far, are you then looking for parallels between beer preference consistency and political loyalty of the states?
+
+**Larry:** Well not directly, it’s not as simple as it may seem. That’s where it gets tricky. It’s important to consider confounding factors that could influence both political affiliation as well as beer preference. Key factors to consider include age, wealth (i.e., economic status), education level, ethnicity, and others. However, these factors are tricky to determine at the user level. Extraction of details like a user’s age or educational background from their beer review text is challenging. I mean, even the greatest writers in history might not produce the most eloquent or inspiring beer reviews.
+
+*Jim chuckles imagining Shakespeare drinking a Stout*
+
+**Jim:** So what did you do?
+
+**Larry:** Conduct the analysis at the state level.
+
+**Jim:** Aha!
+
+**Larry:** For the state-level analysis, I focused on two key confounding factors: age and geographical location. Since extracting age information directly from users is not feasible, I opted to outsource this demographic data. We can assume that the beer drinkers and reviewers on the website have a uniformly distributed age in the range from 18 to 64.
+
+**Jim:** But the legal drinking age is 21…
+
+**Larry:** I know! It’s just for simplification and accordance with political data, you’ll get it later. So I was saying… yeah the confounding factors. Other potential factors, such as ethnicity or income per capita, I excluded to avoid additional complexity and the difficulty of analysing their mutual impact on each other.
+
+**Jim:** Ok, ok, but so… how did you get the age of voters?
+
+**Larry:** Remember exit polls? From those, I obtained 3 age groups: 18-29, 30-44, and 45-64. So basically I have the percentage of Democrat and Republican votes for each age group across 17 states. Remember exit poll data was not available for all states.
+
+**Jim:** Yess, I remember you told me. I’m not drunk bro. I’m following you.
+
+*They share a laugh, taking another sip of their pint. Larry continues to speak a lot*
+
+**Larry:** So since I have more fine-grained information about beer reviews, and therefore beer preference for each state, which can be grouped at the year level, or even the 6-month level, I decided to interpolate the voting data to cover each year. To achieve this, I applied linear interpolation for the years between the election years. Look at what I could plot:
 
 {% include interpolated-vote-distribution.html %}
 
