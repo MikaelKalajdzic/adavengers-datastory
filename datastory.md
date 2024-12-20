@@ -100,9 +100,21 @@ layout: full
 
 {% include fav_beer_us.html %}
 
-{% include count.html %}
+*Jim takes Larry’s phone to play with the chart*
 
-The sentiment plot too...
+**Jim:** I see Stouts, Porters, and IPAs come out on top.
+
+**Larry:** Exactly! Stouts particularly dominated after 2010, becoming the favorite in most states. In fact, by 2016, Stouts were the highest-rated style in 46 out of 50 states.
+
+**Jim:** But you just told me that IPAs were super popular in reviews, and it has no real impact on ratings.
+
+**Larry:** You’re right. Looks like people loved trying them out, but they didn’t dethrone Stouts when it came to taste.
+
+**Jim:** What about other styles?
+
+**Larry:** Lagers are an interesting case. They were never the favorite beer in any state. And to dive deeper, I analyzed how often each beer style was selected as the favorite in different states, from 2004 to 2016. Look at this, you can explore each state individually
+
+{% include count.html %}
 
 {% include sentiment_states.html %}
 
