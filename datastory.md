@@ -6,6 +6,12 @@ layout: full
 
 # Pints & Politics: Sipping Through Red, Blue, and Brew 🇺🇸🍺
 
+2010-2020
+
+2010–2020
+
+2010—2020
+
 In the light of recent elections and the ever-present passion for beer in American culture, we embark on a unique journey to uncover the fascinating link between politics and pints. This data story delves into the heart of the American lifestyle, exploring whether the beers we sip reveal more than just our taste preferences—perhaps even our political leanings 🤔.  
 
 By analyzing beer styles, sentiments, and review ratings across the U.S., we aim to map out the subtle (and not-so-subtle) ways our brews align with political identities. We investigate how beer preferences vary by state, do they depend on the political leaning, whether swing states gravitate toward specific styles during election years and how the beer preference trends change throughout the years of 2004-2016.
