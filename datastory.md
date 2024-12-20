@@ -256,6 +256,8 @@ layout: full
 
 **Jim:** So… sentiment isn’t really tied to politics or geography?
 
+{% include pairwise.html %}
+
 **Larry:** Exactly. Based on these results, I decided to exclude sentiment from the analysis moving forward, it doesn’t add much value. Now take New York (Democrat) and Georgia (Republican), having similar trends across all beer styles, with correlation being around 0.7. Them being on the opposite political sides, it poses a question of whether its closeness influences the similarity in beer preference trends. For example, the correlation of IPA and Stout trends have a lower correlation value (around 0.55) for Georgia and California (Democrat) than Georgia and New York.
 
 *Jim is carefully listening to his friend Larry*
@@ -276,9 +278,43 @@ layout: full
 
 {% include swing_pattern.html %}
 
-{% include correlation_matrix.html %}
+**Jim:** Nice! And what were their top 3 favorite beer styles?
 
-{% include pairwise.html %}
+**Larry:** I can show you that too! This interactive plot shows the top 3 beer styles in each of these years, for the pairs of states I mentioned.
+
+{% include top3_styles.html %}
+
+**Jim:** And? What did you find out?
+
+**Larry:** For the first pair, Pennsylvania and Wisconsin, Democrats were essentially ruling party during the whole period we are observing. Therefore, it is interesting to observe more or less consistent selection of top 3 favourite beer styles.
+
+**Larry:** Second pair is Ohio and Iowa, states that beside having similar `swing pattern` are also geographically close in the Midwest. While Ohio has steady selection of top 3 favourites with minor favouring of Other Ales in 3rd place during Obama's first term, Iowa experiences a substantial shift in tastes after switching between Republican and Democrat ruling in 2008, with rise in popularity of Stouts. This suggests that local factors beyond political affiliation, can affect beer preferences. Interestingly, Florida which has the same `swing pattern` but is not geographically close to Iowa experiences similar shift in tastes with overtake of top spot by Stouts, indicating that political factors might be driving force for it. Hypothetically, one could speculate that for reviewers of Florida and Iowa, IPAs are associated with more Republican-leaning.
+
+**Jim:** Wait, wait—are you saying IPAs are political now?
+
+**Larry:** Well, no, listen, I want to finish before they kick us out. This hypothesis is not reflected in North Carolina and Indiana which voted Democrat only in 2008, with single interesting observations being that reviewers from Indiana favoured Porters on the 3rd place during this time. States such as Ohio and Virginia, which are geographically close to North Carolina and Indiana in the East Coast region, suggest that geographical or other local factors might play a more significant role in shaping beer preferences than politics in these cases.
+
+**Larry:** Finally, we come to Nevada and Virginia, which both voted Republican only in 2004. These 2 display quite different trend in top 3 favourites, which might be due to being on opposite sides of the country. Interestingly in Nevada during Democrat times IPAs are not as favoured as in other states, being on 3rd position after 2011.
+
+**Bartender:**  Alright, folks, that’s it for tonight! I hate to cut the conversation short, but we’re closing up. Finish your drinks, and we’ll see you next time!
+
+**Larry:** Luckily, that is the end of my analysis. Do you have any comments, while I chug this pint of mine?
+
+**Jim:** Wow, that was a lot of information there. But, I can say that although we observed potential patterns in beer preferences, particularly among countries with similar voting trends, including swing states that shift their political climate over the years, a more detailed analysis is necessary to draw any further conclusions. Am I right?
+
+**Larry:** Yes exactly! Firstly, having data available for all states is crucial to ensure a larger dataset for analysis and to reduce variance in the results. Additionally, a more in-depth causal analysis is needed to identify and separate other potential factors influencing beer preferences.
+
+**Jim:** And if I might add, another limitation lies in how beer preferences are defined, specifically through beer styles. For example, stout reviews as we saw are overrepresented and dominate as the top-ranked beer style across the U.S., making it challenging to identify distinct preferences between different states. A more detailed analysis based on aspects, keywords associated with beer taste could provide greater insights.
+
+**Larry:** Yes, also, you recall that we observed a general increase of trend in average ratings across all styles and states, contributing to the high Pearson correlation value. Could this increase be linked to the growing popularity of the internet over the years, making reviews more common in day-to-day life? Also, could the rise in high-value ratings be attributed to the halo effect (a cognitive bias where an overall positive impression influences specific judgments)? Exploring these possibilities could provide further clarity.
+
+**Jim:** A lot of questions to think about and analyse! Besides that, the basic positive/negative sentiment analysis does not provide sufficient distinction between beer styles, so incorporating a broader range of sentiment indicators would likely yield more meaningful results!
+
+**Larry:** Yes! Then, let’s do that, and we discuss the results again, next time we meet!
+
+**Bartender:** Oh, no. Not again!
+
+{% include correlation_matrix.html %}
 
 | Column 1       | Column 2       | Column 3       |
 |-----------------|---------------|----------------|
@@ -286,7 +322,6 @@ layout: full
 | Row 2, Item 1  | Row 2, Item 2  | Row 2, Item 3  |
 | Row 3, Item 1  | Row 3, Item 2  | Row 3, Item 3  |
 
-{% include top3_styles.html %}
 
 ## Sources
 
