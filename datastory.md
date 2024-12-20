@@ -70,14 +70,33 @@ layout: full
   <img src="./assets/img/beer_types_word_cloud.png" alt="Beer Types Word Cloud" style="max-width: 100%; height: auto;">
   <p style="font-size: 14px; color: gray;">Figure 1: A word cloud showing beer styles encompassed by our general categories.</p>
 </div>
+<br/><br/>
 
 **Jim:** Looks very nice. So you’ve categorized all these beer styles, but how do you know which ones are actually the most popular?
 
 **Larry:** I see you’re starting to get interested now! I analyzed the number of reviews left by U.S. users for each beer style over the years. Check this out!
 
-*Larry shows the interactive chart on his phone*{% include count_total_reviews.html %}
+*Larry shows the interactive chart on his phone*
 
-First of all, let's see what are the most preferred beer styles across U.S. states for each year:
+{% include count_total_reviews.html %}
+
+**Larry:** What you’re looking at here is the count of reviews by beer style, year by year. You can see a clear increase in the overall number of reviews, especially in the late 2000s and early 2010s. Makes sense right? That’s when internet communities and rating websites started to grow in popularity.
+
+**Jim:** That’s awesome! Yeah, I agree, and I see the top 3 beer styles are the same throughout the years: IPA, Other Ale, and Stout.
+
+**Larry:** Absolutely! And also we can notice that after 2008, Stouts consistently ranked third, showing how stable their popularity is among beer enthusiasts.
+
+**Jim:** What about IPAs? I keep hearing about them everywhere.
+
+**Larry:** You’re right! There was a big rise in IPA reviews starting in the mid-2010s. That’s actually when IPAs became the best-selling style in the [craft beer segment](https://www.beervanablog.com/beervana/2019/12/16/the-2010s-in-review). It’s cool to see how the trends in reviews align with real-world sales data.
+
+**Jim:** So basically, this chart doesn’t just show reviews, does it? It’s like a snapshot of how beer culture evolved.
+
+**Larry:** You’ve got it! It’s fascinating to see how much you can learn from data.
+
+**Jim:** Alright, so you know which beer style is the most reviewed, but does that mean they are also the most highly rated maybe?
+
+**Larry:** Not exactly! That’s what I looked into next – figuring out which beer styles received the highest average ratings across the U.S. For this, I used the mean rating across five categories: aroma, palate, taste, appearance, and overall. Look at this, I’ve got a map that shows how beer style preference evolved over time.
 
 {% include fav_beer_us.html %}
 
