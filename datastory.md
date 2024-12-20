@@ -116,15 +116,49 @@ layout: full
 
 {% include count.html %}
 
+*Jim takes some time to explore the chart by selecting some states*
+
+**Jim:** That’s cool! What did you find?
+
+**Larry:** Well, some states show remarkable loyalty to their beer preferences. For example, Kentucky, Massachusetts, Connecticut, Ohio, and Oregon consistently picked Stouts as their favourite every single year from 2004 to 2016.
+
+**Jim:** Looks like they know what they like… But what about the other states?
+
+**Larry:** That’s where it gets interesting. States such as Montana, North and South Dakota, Alaska, Utah, Vermont, and Wyoming have frequently switched between different beer styles over the years.
+
+**Jim:** I think I can see where you're going with this. So some states are more consistent while others are more… swinging if I can say.  I guess you want to say that this might reflect their unique cultures, and maybe even connect with their political leanings.
+
+**Larry:** Let’s not take the short path and jump to any conclusion directly from here. We have plenty of time.
+
+*Larry and Jim order another round of beers, diving deeper into their discussion.*
+
+**Larry:** Cheers!
+
+**Jim:** Cheers!
+
+**Larry:** Can I ask you a question?
+
+**Jim:** Sure, go ahead!
+
+**Larry:** How do you feel?
+
+**Jim:** What do you mean?
+
+**Larry:** How do you feel enjoying this beer? What sentiment does that bring to you? If you have to describe it?
+
+**Jim:** Huuuh… honestly I don’t really know… I mean how to express my sentiment? I can just say that *this beer looks very nice, it has no smell or special taste to speak of, but certainly not bad. Very easy to drink.*
+
+**Larry:** I will tell you something, my friend. You don’t have to explicitly tell me your sentiment. Just the way you are describing the beer can reveal a lot, just the choices of the words you use. And that’s something we can analyze.
+
+**Jim:** Oh. How do you even do that?
+
+**Larry:** By using [DistilBERT base uncased fine tuned SST-2](https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english) model. We can categorize textual reviews into ones that have either positive or negative sentiments.
+
+**Jim:** And you did that on all textual reviews from your dataset?
+
+**Larry:** Exactly. Look at this. You can see the evolution over the years across the 8 beer styles for a subset of the states. It displays the fraction of positive (in green) and negative (in red) of the sentiment.
+
 {% include sentiment_states.html %}
-
-comment on results,...
-
-## Connection to politics
-
-plot with winners over years  
-what are the confounding factors that we considered and why we went for the ones that we did... 
-deeper analysis into potential confounding factors - age, where we get the data from. Why do we interpolate (motivation behind all this)
 
 {% include usmap_politics.html %}
 
