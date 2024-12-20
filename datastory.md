@@ -244,7 +244,7 @@ layout: full
 
 **Jim:** You know me!
 
-**Larry:** On top of that, I did a “lookalike” analysis, comparing states with similar political voting trends and geographic proximity to see how these factors might influence beer preferences.
+**Larry:** On top of that, I did a *lookalike* analysis, comparing states with similar political voting trends and geographic proximity to see how these factors might influence beer preferences.
 
 *Jim nods, sipping his beer, ready for Larry to dive into the details of his results.*
 
