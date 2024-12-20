@@ -2,33 +2,69 @@
 layout: full
 ---
 
-![blablabla](assets/img/IMG_E7587.jpg)
+![blablabla](assets/img/beer-2.png)
 
-# Pints & Politics: Sipping Through Red, Blue, and Brew 🇺🇸🍺
+# Pints & Politics: Sipping Through Red, Blue, and Brew US 🍺
 
-2010-2020
+*Friday night. Cozy bar in California, USA. At a table, Larry and Jim sit enjoying a beer together.*
 
-2010–2020
+**Larry:** (*takes a long sip of his lager*) You know Jim, there’s something poetic about beer. It’s not just a drink – it’s like a mirror for the country. You can tell a lot about people by what’s in their glass.
 
-2010—2020
+**Jim:** Yeah I would agree with that… for once. I see elegant people enjoying a nice fancy cocktail. Old folks a glass of whisky… And us, students, a simple, cheap beer.
 
-In the light of recent elections and the ever-present passion for beer in American culture, we embark on a unique journey to uncover the fascinating link between politics and pints. This data story delves into the heart of the American lifestyle, exploring whether the beers we sip reveal more than just our taste preferences—perhaps even our political leanings 🤔.  
+**Larry:** Nah, that’s not the point I’m making. It’s bigger than just age or class. Think about it, beer is like an unspoken language, man. It reveals where you stand in America, my friend!
 
-By analyzing beer styles, sentiments, and review ratings across the U.S., we aim to map out the subtle (and not-so-subtle) ways our brews align with political identities. We investigate how beer preferences vary by state, do they depend on the political leaning, whether swing states gravitate toward specific styles during election years and how the beer preference trends change throughout the years of 2004-2016.
-This deep dive into Pints & Politics sets out to discover whether these two inherently American passions are linked or if, in the end, beer simply transcends party lines. Grab a pint and join us on this flavorful and thought-provoking journey!
+**Jim:** (*raises an eyebrow*) Oh, here we go again Larry. Let me guess – you’re about to tell me how beer preferences somehow connect to our political leaning, right?  
 
-The information about beer reviews we gather from a [BeerAdvocate](https://www.beeradvocate.com/) website. It contains over 2 million reviews coming from U.S. users. We find that this information is sufficient to conduct our analysis, leading to us focusing solely on the BeerAdvocate dataset. The reviews in the dataset are spanning over years from 2001 to 2017. 
+**Larry:** Exactly! Think about it… The beers we drink say more about us than we realize.
 
-Political information was gathered from several different sources. For our analysis we required information about the winning parties in each U.S. state, in the election years 2004-2016, obtained from [U.S. President 1976-2020](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/42MVDX). Age-specific voting preference was gathered from exit polls. The information was available for the mentioned election years ([Sources](#sources)), however not for all the states. This is due to the fact that exit polls are of interest in states that change their political climate over the years, *swing states*. Since conducting these surveys is costly, the consistently Democrat or Republican states are usually omitted.
+**Jim:** (*leans back in his chair*) Alright… but where’s your proof? You always come in here with these wild ideas after a few beers.
 
-## Research questions
-Put research questions here.
+**Larry:** I’m not giving you a random fun fact. I did some research since the last time we met. And I can guarantee you I found interesting results!
 
-## What's behind the beer reviews?
+**Jim:** Well, if it’s serious work, now you have my attention.
 
-We examine the top 8 beer styles, such as IPA, Stout, and Lager, to identify the preferred types across U.S. states and explore potential connections to their political leanings. These 8 styles account for 75% of all reviews, which we consider sufficient for further analysis. Preference is defined as the average score given on the BeerAdvocate website, where ratings range from 1 to 5. Moreover, we analyze the sentiment of textual reviews for these beer styles, categorizing them as either positive or negative.
+**Larry:** Oh it’s real work. I analyzed the different beer styles, sentiments, and review ratings across the U.S. I investigated how beer preferences vary by state and if they align with political leanings. Also for swing states, if they gravitate toward specific beer styles during election years. I did all these analyses to see how beer preference trends changed throughout the years of 2004–2016.
 
-What are the most reviewed beers styles:
+**Jim:** (intrigued) Wait, seriously? How did you do all of that? ChatGPT?
+
+*Larry and Jim share a good laugh and take a sip of beer.*
+
+**Larry:** So first, I dug into the BeerAdvocate dataset – over two million reviews from American beer drinkers.
+
+**Jim:** Two million reviews? That’s a lot of data, man. Okay, but how does that connect to politics?
+
+**Larry:** That's where the real fun begins. While BeerAdvocate provides all the beer reviews, I had to gather the political information separately. For that, I used different sources. Firstly, I pulled data on the winning parties in each U.S state, in the election years from 2004 to 2016, from the [U.S. President 1976–2020](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/42MVDX) dataset. Also, I gathered data on age-specific voting preferences from exit polls. But here’s a catch – it wasn’t available for all states. You know, exit polls are of interest in states that change their political climate over the years, the so-called swing states. Also, conducting these surveys is quite costly, so for states that are consistently Democrat or Republican, they are usually omitted.
+
+**Jim:** All that looks very nice, but wait – just to make sure I’m following, what exactly are you trying to answer with all that research?
+
+**Larry:** Well, at first I wanted to figure out how beer preferences can be categorized and visualized across different dimensions (such as style, emotions, sentiments, and key attributes) to provide a comprehensive understanding of beer types based on the U.S. reviewers.
+
+**Jim:** Alright, that makes sense. And then? I guess it's linked to politics…
+
+**Larry:** Then, I’m diving deeper. I wanted to see how these beer preferences vary across different U.S. states, and can these preferences be linked to political ideologies. Are there specific beer preferences that correlate with Republican or Democratic voting patterns?
+
+**Jim:** Hmmmmm interesting.
+
+**Larry:** And finally, how do beer preferences change over time during election years, particularly in swing states?
+
+**Jim:** You really look passionate about all that!
+
+**Larry:** I mean yeah, I really love beer. This one is very good by the way.
+
+**Jim:** You know I’m not a beer connoisseur, but I really enjoy that one. Actually, for me, all the beers are kinda the same.
+
+**Larry:** (*laughing*) Well my friend, I think you really didn’t have enough beers in your life to say something like that! Cheers!
+
+*Larry and Jim clink their pints*
+
+**Jim:** Cheers to you!
+
+**Larry:** You know, there are actually 8 main beer styles that people commonly talk about. They are: IPA (India Pale Ale), Pale Ale, Red/Amber Ale, Other Ales (covering remaining Ale subcategories), Lager, Stout, Porter, and Pilsner.
+
+**Jim:** So these are the beer styles you focused on in your research?
+
+**Larry:** Yes! Actually, among the reviewed beers in the dataset, there are 104 unique beer styles. I did matching by keywords into the 8 predefined categories. I was left with 56 unique styles. And to give you a clearer idea of their distribution, here’s a cloud of words.
 
 <div style="text-align: center;">
   <img src="./assets/img/beer_types_word_cloud.png" alt="Beer Types Word Cloud" style="max-width: 100%; height: auto;">
@@ -80,4 +116,15 @@ deeper analysis into potential confounding factors - age, where we get the data 
 {% include top3_styles.html %}
 
 ## Sources
+
+Illustrations:  
+ChatGPT / Dall-E, [chatgpt.com](https://chatgpt.com).
+
+Datasets:  
+MIT Election Data and Science Lab, 2017, "U.S. President 1976–2020", Harvard Dataverse, V8, doi:10.7910/DVN/42MVDX.  
+Exit polls, NY Times, [2004](https://www.nytimes.com/elections/2012/results/president/exit-polls.html), [2008](https://archive.nytimes.com/www.nytimes.com/elections/2008/results/president/national-exit-polls.html?mod=article_inline), [2012](https://www.nytimes.com/elections/2012/results/president/exit-polls.html), [2016](https://edition.cnn.com/election/2016/results/exit-polls)
+BeerAdvocate dataset, 2019, [drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF).
+
+
+
 
