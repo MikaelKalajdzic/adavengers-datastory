@@ -30,7 +30,7 @@ layout: full
 
 *Larry and Jim share a good laugh and take a sip of beer.*
 
-**Larry:** So first, I dug into the BeerAdvocate dataset – over two million reviews from American beer drinkers.
+**Larry:** So first, I dug into the [BeerAdvocate](https://www.beeradvocate.com/) dataset – over two million reviews from American beer drinkers.
 
 **Jim:** Two million reviews? That’s a lot of data, man. Okay, but how does that connect to politics?
 
@@ -68,7 +68,7 @@ layout: full
 <br/><br/>
 <div style="text-align: center;">
   <img src="./assets/img/beer_types_word_cloud.png" alt="Beer Types Word Cloud" style="max-width: 100%; height: auto;">
-  <p style="font-size: 14px; color: gray;">Figure 1: A word cloud showing beer styles encompassed by our general categories.</p>
+  <p style="font-size: 14px; color: gray;">A word cloud showing beer styles encompassed by our general categories.</p>
 </div>
 <br/><br/>
 
@@ -246,7 +246,9 @@ layout: full
 
 **Larry:** On top of that, I did a *lookalike* analysis, comparing states with similar political voting trends and geographic proximity to see how these factors might influence beer preferences.
 
-*Jim nods, sipping his beer, ready for Larry to dive into the details of his results.*
+*Jim nods, sipping his beer, ready for Larry to dive into the details of his results, while analyzing the following interactive plot.*
+
+{% include pairwise.html %}
 
 **Larry:** First, let’s take New York and California. Both are Democratic states but located on the opposite sides of the country. In terms of average ratings, we can see very similar and highly correlated IPA (0.82) and Stout (0.89) trends. For Lager, ratings follow a similar pattern in both states until 2016, when the rating in California reaches a higher value than in New York. When it comes to trends in fraction of positive sentiment, I noticed a moderate positive correlation between two states for IPAs (0.65) and Stouts (0.55).
 
@@ -255,8 +257,6 @@ layout: full
 **Larry:** Let’s see some other examples! Take Arizona and Texas, two representative Republican states, close geographically. We can observe that for IPA and Stouts, the trends of average ratings have a correlation of 0.77 and 0.75 respectively, and the trends are rather similar, both having an increase after 2008. For Lager, the correlation is slightly lower, but both curves reach similar values by 2016. Sentiment, however, doesn’t show any significant correlation.
 
 **Jim:** So… sentiment isn’t really tied to politics or geography?
-
-{% include pairwise.html %}
 
 **Larry:** Exactly. Based on these results, I decided to exclude sentiment from the analysis moving forward, it doesn’t add much value. Now take New York (Democrat) and Georgia (Republican), having similar trends across all beer styles, with correlation being around 0.7. Them being on the opposite political sides, it poses a question of whether its closeness influences the similarity in beer preference trends. For example, the correlation of IPA and Stout trends have a lower correlation value (around 0.55) for Georgia and California (Democrat) than Georgia and New York.
 
@@ -326,6 +326,13 @@ layout: full
 | Row 3, Item 1  | Row 3, Item 2  | Row 3, Item 3  |
 
 -->
+## Team
+
+- Marija Zelić
+- Sara Zatezalo
+- Mikael Kalajdžić
+- David Kalajdžić
+- Luc Desmeules
 
 ## Sources
 
